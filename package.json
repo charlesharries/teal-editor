@@ -1,5 +1,5 @@
 {
-  "name": "pds-editor",
+  "name": "teal-editor",
   "version": "1.0.0",
   "description": "CLI tool to delete AT Protocol records by time range",
   "type": "module",

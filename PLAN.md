@@ -1,11 +1,11 @@
-# Plan: PDS Editor — Manage fm.teal.alpha.feed.play Records
+# Plan: Teal Editor — Manage fm.teal.alpha.feed.play Records
 
 ## Overview
 TypeScript CLI tools for managing `fm.teal.alpha.feed.play` records on your AT Protocol PDS. Two entry points: one for deleting records by time range, and one for analyzing the collection to detect suspicious bulk-scrobble patterns.
 
 ## File Structure
 ```
-pds-editor/
+teal-editor/
 ├── package.json
 ├── tsconfig.json
 ├── .env              # Credentials (gitignored)

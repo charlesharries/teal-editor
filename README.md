@@ -1,4 +1,4 @@
-# pds-editor
+# teal-editor
 
 CLI tools for managing `fm.teal.alpha.feed.play` records on your AT Protocol PDS, particularly if you're affected by [this issue](https://github.com/teal-fm/piper/issues/56) on Piper with Apple Music.
 
