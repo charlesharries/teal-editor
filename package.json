@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "start": "tsx src/index.ts",
-    "analyze": "tsx src/analyze.ts"
+    "analyze": "tsx src/analyze.ts",
+    "search": "tsx src/search.ts"
   },
   "dependencies": {
     "@atproto/api": "^0.13.0",

@@ -61,6 +61,29 @@ npm run analyze -- --gap=30 --min-block=20
 
 Defaults: blocks of >10 records with gaps of 45 seconds or less.
 
+### Search records
+
+Search for records by artist, album, or track name. Supports glob-style wildcards (`*`) and case-insensitive matching.
+
+```bash
+# Exact artist match (case-insensitive)
+npm run search -- --artistName="Planning for Burial"
+
+# Wildcard prefix match
+npm run search -- --artistName="Planning*"
+
+# Substring match
+npm run search -- --trackName="*Rain*"
+
+# Count matches only
+npm run search -- --artistName="Planning*" --count
+
+# Combine filters (AND logic)
+npm run search -- --artistName="Planning*" --albumName="Below the House" --count
+```
+
+Available filters: `--artistName=`, `--albumName=`, `--trackName=`. At least one is required. Add `--count` to print only the total number of matches.
+
 ## Rate limits
 
 Deletions are rate-limited to stay under the PDS limit of 5,000/hour (uses a 4,500/hour buffer). For large collections, expect deletions to take a while. The tool handles retries and HTTP 429 responses automatically.

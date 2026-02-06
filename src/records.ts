@@ -16,7 +16,7 @@ export interface RecordRef {
 export async function* listAllRecords(
   agent: AtpAgent,
   repo: string
-): AsyncGenerator<{ uri: string; rkey: string }> {
+): AsyncGenerator<{ uri: string; rkey: string; value: any }> {
   let cursor: string | undefined;
 
   while (true) {
@@ -30,7 +30,7 @@ export async function* listAllRecords(
     for (const record of response.data.records) {
       // Extract rkey from URI: at://did:plc:xxx/collection/rkey
       const rkey = record.uri.split('/').pop()!;
-      yield { uri: record.uri, rkey };
+      yield { uri: record.uri, rkey, value: record.value };
     }
 
     cursor = response.data.cursor;
