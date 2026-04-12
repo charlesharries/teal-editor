@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@atproto/api": "^0.13.0",
-    "dotenv": "^16.4.0"
+    "dotenv": "^17.4.2"
   },
   "devDependencies": {
     "@types/node": "^20.0.0",
