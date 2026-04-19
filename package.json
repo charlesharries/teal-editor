@@ -9,7 +9,7 @@
     "search": "tsx src/search.ts"
   },
   "dependencies": {
-    "@atproto/api": "^0.13.0",
+    "@atproto/api": "^0.19.9",
     "dotenv": "^16.4.0"
   },
   "devDependencies": {
